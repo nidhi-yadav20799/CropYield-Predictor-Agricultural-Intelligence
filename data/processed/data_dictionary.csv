@@ -1,0 +1,9 @@
+Column Name,Data Type
+Unnamed: 0,int64
+Area,object
+Item,object
+Year,int64
+hg/ha_yield,int64
+average_rain_fall_mm_per_year,float64
+pesticides_tonnes,float64
+avg_temp,float64
