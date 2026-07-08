@@ -1,16 +1,16 @@
 # 🌾 Crop Yield Predictor - Agricultural Intelligence
 
-## Overview
+Machine Learning project for predicting agricultural crop yield using weather, rainfall, pesticide usage, and temperature data. This project is being developed as part of the Code-A-Nova Data Science Internship.
 
-This project predicts agricultural crop yield using weather, rainfall, pesticide usage, and temperature data through machine learning.
+---
 
-## Progress
+##  Project Overview
 
--  Day 1 - Dataset Acquisition & Validation
--  Day 2 - Data Cleaning
--  Day 3 - Exploratory Data Analysis (In Progress)
+The objective of this project is to analyze agricultural data, perform exploratory data analysis (EDA), engineer meaningful features, train multiple machine learning models, and build an interactive Streamlit dashboard for crop yield prediction.
 
-## Tech Stack
+---
+
+##  Tech Stack
 
 - Python
 - Pandas
@@ -18,26 +18,110 @@ This project predicts agricultural crop yield using weather, rainfall, pesticide
 - Matplotlib
 - Seaborn
 - Scikit-Learn
-- Streamlit
 - XGBoost
+- Streamlit
 
-## Dataset
+---
 
-Crop Yield Prediction Dataset (Kaggle)
+##  Dataset
 
-## Folder Structure
+**Source:** Kaggle – Crop Yield Prediction Dataset
+
+Target Variable:
+
+- **hg/ha_yield** (Crop Yield)
+
+Features include:
+
+- Area
+- Item (Crop)
+- Year
+- Average Rainfall
+- Pesticides Usage
+- Average Temperature
+
+---
+
+#  Project Structure
 
 ```text
 CropYield-Predictor/
 │
 ├── data/
+│   ├── raw/
+│   └── processed/
+│
+├── images/
+├── models/
 ├── notebooks/
 ├── reports/
-├── dashboard/
-├── models/
 ├── src/
+├── README.md
+└── .gitignore
 ```
 
-## Author
+---
 
-Nidhi Yadav
+#  Progress
+
+## ✔ Day 1 – Data Acquisition & Validation
+
+- Dataset acquisition
+- Data loading
+- Dataset inspection
+- Schema documentation
+- Missing value analysis
+- Data validation
+- Data dictionary generation
+
+---
+
+## ✔ Day 2 – Data Cleaning
+
+- Missing value treatment
+- Duplicate removal
+- Data type validation
+- Outlier detection using IQR
+- Missing value heatmap
+- Clean dataset export
+
+---
+
+## ✔ Day 3 – Exploratory Data Analysis (Part 1)
+
+- Univariate distributions
+- Histograms with KDE
+- Boxplots
+- Correlation heatmap
+- Feature correlation with target
+- Statistical observations
+
+---
+
+## ✔ Day 4 – Exploratory Data Analysis (Part 2)
+
+- Rainfall vs Crop Yield
+- Temperature vs Crop Yield
+- Crop Yield by Region
+- Pair Plot
+- Business insights and observations
+
+---
+
+#  Upcoming Work
+
+- Day 5 – Feature Engineering
+- Day 6 – Machine Learning Pipeline
+- Day 7 – Model Training & Hyperparameter Tuning
+- Day 8 – Model Evaluation
+- Day 9 – Streamlit Dashboard
+- Day 10 – Final Report & Deployment
+
+---
+
+#  Author
+
+**Nidhi Yadav**
+
+
+Code-A-Nova Internship 2026
