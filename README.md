@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🌾 Crop Yield Predictor - Agricultural Intelligence
 
 Machine Learning project for predicting crop yield using weather, rainfall, pesticides, and agricultural data.
@@ -22,3 +23,7 @@ Machine Learning project for predicting crop yield using weather, rainfall, pest
 ## Dataset
 
 Crop Yield Prediction Dataset (Kaggle)
+=======
+# CropYield-Predictor-Agricultural-Intelligence
+Machine Learning project for predicting crop yield using weather, rainfall, pesticides, and agricultural data with EDA, feature engineering, model comparison, and Streamlit dashboard.
+>>>>>>> 8b2080198058392e2111d8b851fc6e836f7d657e
