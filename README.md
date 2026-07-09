@@ -1,48 +1,59 @@
 # 🌾 Crop Yield Predictor - Agricultural Intelligence
 
-Machine Learning project for predicting agricultural crop yield using weather, rainfall, pesticide usage, and temperature data. This project is being developed as part of the Code-A-Nova Data Science Internship.
+
+## Overview
+
+Crop Yield Predictor is a machine learning project that predicts agricultural crop yield using historical weather, rainfall, pesticide usage, and temperature data. The project follows a complete end-to-end machine learning workflow, including data preprocessing, exploratory data analysis, feature engineering, model development, model evaluation, and dashboard deployment.
 
 ---
 
-##  Project Overview
+## Project Objectives
 
-The objective of this project is to analyze agricultural data, perform exploratory data analysis (EDA), engineer meaningful features, train multiple machine learning models, and build an interactive Streamlit dashboard for crop yield prediction.
-
----
-
-##  Tech Stack
-
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Scikit-Learn
-- XGBoost
-- Streamlit
+- Analyze agricultural production data.
+- Perform data cleaning and validation.
+- Conduct exploratory data analysis (EDA).
+- Engineer meaningful domain-specific features.
+- Build reproducible machine learning pipelines.
+- Compare multiple regression models.
+- Optimize model performance using hyperparameter tuning.
+- Deploy an interactive prediction dashboard using Streamlit.
 
 ---
 
-##  Dataset
+## Tech Stack
+
+| Category | Technology |
+|----------|------------|
+| Programming Language | Python |
+| Data Analysis | Pandas, NumPy |
+| Data Visualization | Matplotlib, Seaborn, Plotly |
+| Machine Learning | Scikit-Learn, XGBoost |
+| Dashboard | Streamlit |
+| Experiment Tracking | MLflow |
+| Model Serialization | Joblib |
+
+---
+
+## Dataset
 
 **Source:** Kaggle – Crop Yield Prediction Dataset
 
-Target Variable:
+### Target Variable
 
-- **hg/ha_yield** (Crop Yield)
+- hg/ha_yield
 
-Features include:
+### Features
 
 - Area
 - Item (Crop)
 - Year
-- Average Rainfall
-- Pesticides Usage
+- Average Rainfall (mm/year)
+- Pesticides (tonnes)
 - Average Temperature
 
 ---
 
-#  Project Structure
+## Project Structure
 
 ```text
 CropYield-Predictor/
@@ -52,76 +63,124 @@ CropYield-Predictor/
 │   └── processed/
 │
 ├── images/
+│
 ├── models/
+│
 ├── notebooks/
+│   └── 01_Data_Preprocessing_EDA.ipynb
+│
 ├── reports/
+│
 ├── src/
+│
 ├── README.md
 └── .gitignore
 ```
 
 ---
 
-#  Progress
+## Workflow
 
-## ✔ Day 1 – Data Acquisition & Validation
+### Data Preparation
 
 - Dataset acquisition
 - Data loading
-- Dataset inspection
-- Schema documentation
-- Missing value analysis
 - Data validation
 - Data dictionary generation
+- Missing value analysis
 
----
+### Data Cleaning
 
-## ✔ Day 2 – Data Cleaning
-
-- Missing value treatment
 - Duplicate removal
 - Data type validation
-- Outlier detection using IQR
-- Missing value heatmap
-- Clean dataset export
+- Outlier analysis using the IQR method
+- Clean dataset generation
 
----
+### Exploratory Data Analysis
 
-## ✔ Day 3 – Exploratory Data Analysis (Part 1)
+The project includes comprehensive exploratory data analysis with statistical interpretation.
 
-- Univariate distributions
-- Histograms with KDE
+Visualizations include:
+
+- Histograms
+- KDE Plots
 - Boxplots
-- Correlation heatmap
-- Feature correlation with target
-- Statistical observations
-
----
-
-## ✔ Day 4 – Exploratory Data Analysis (Part 2)
-
+- Correlation Heatmap
+- Feature Correlation Analysis
+- Crop Yield by Region
 - Rainfall vs Crop Yield
 - Temperature vs Crop Yield
-- Crop Yield by Region
 - Pair Plot
-- Business insights and observations
+
+### Feature Engineering
+
+Engineered features include:
+
+- Rainfall Category
+- Growing Degree Days (GDD)
+- Temperature Category
+- Pesticide Category
+- Rainfall–Temperature Ratio
+- Yield per Unit of Pesticide
+
+### Machine Learning Pipeline
+
+Implemented using Scikit-Learn Pipeline and ColumnTransformer.
+
+Current baseline models:
+
+- Linear Regression
+- Ridge Regression
+- Random Forest Regressor
 
 ---
 
-#  Upcoming Work
+## Current Progress
 
-- Day 5 – Feature Engineering
-- Day 6 – Machine Learning Pipeline
-- Day 7 – Model Training & Hyperparameter Tuning
-- Day 8 – Model Evaluation
-- Day 9 – Streamlit Dashboard
-- Day 10 – Final Report & Deployment
+| Module | Status |
+|---------|--------|
+| Data Validation | Completed |
+| Data Cleaning | Completed |
+| Exploratory Data Analysis | Completed |
+| Feature Engineering | Completed |
+| Machine Learning Pipeline | Completed |
+| Baseline Model Development | Completed |
+| Model Evaluation | In Progress |
+| Hyperparameter Tuning | Pending |
+| Dashboard Development | Pending |
+| Final Report | Pending |
 
 ---
 
-#  Author
+## Upcoming Work
 
-**Nidhi Yadav**
+- Model Evaluation
+- Cross Validation
+- Hyperparameter Tuning
+- Feature Importance Analysis
+- Residual Analysis
+- Streamlit Dashboard
+- MLflow Experiment Tracking
+- Model Export using Joblib
+- Final Report
+- Project Demonstration
 
+---
 
-Code-A-Nova Internship 2026
+## Results
+
+The project currently includes:
+
+- Cleaned dataset
+- Feature-engineered dataset
+- Reproducible preprocessing pipeline
+- Baseline machine learning models
+
+Model evaluation, optimization, and deployment will be completed in the remaining development stages.
+
+---
+
+## Author
+
+Nidhi Yadav
+
