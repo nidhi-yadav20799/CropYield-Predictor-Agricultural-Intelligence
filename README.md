@@ -135,36 +135,34 @@ Current baseline models:
 
 ---
 
-## Current Progress
+## Progress
 
-| Module | Status |
-|---------|--------|
-| Data Validation | Completed |
-| Data Cleaning | Completed |
-| Exploratory Data Analysis | Completed |
-| Feature Engineering | Completed |
-| Machine Learning Pipeline | Completed |
-| Baseline Model Development | Completed |
-| Model Evaluation | In Progress |
-| Hyperparameter Tuning | Pending |
-| Dashboard Development | Pending |
-| Final Report | Pending |
+### Completed
 
----
+- Data acquisition and validation
+- Data cleaning and preprocessing
+- Exploratory Data Analysis (Part 1)
+- Exploratory Data Analysis (Part 2)
+- Feature engineering
+- Scikit-Learn preprocessing pipeline
+- Train-test split
+- Baseline regression models
+  - Linear Regression
+  - Ridge Regression
+  - Random Forest
+- Advanced regression models
+  - Gradient Boosting
+  - XGBoost
+- 5-fold cross-validation
+- Hyperparameter tuning using RandomizedSearchCV
 
-## Upcoming Work
+### Upcoming
 
-- Model Evaluation
-- Cross Validation
-- Hyperparameter Tuning
-- Feature Importance Analysis
-- Residual Analysis
-- Streamlit Dashboard
-- MLflow Experiment Tracking
-- Model Export using Joblib
-- Final Report
-- Project Demonstration
-
+- Model evaluation
+- Feature importance analysis
+- Residual analysis
+- Streamlit dashboard
+- Final report
 ---
 
 ## Results
