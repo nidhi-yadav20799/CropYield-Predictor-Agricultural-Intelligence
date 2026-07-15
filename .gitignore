@@ -5,4 +5,3 @@ __pycache__/
 venv/
 .env
 mlruns/
-models/random_forest_pipeline.pkl
