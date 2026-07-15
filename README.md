@@ -1,22 +1,51 @@
 # 🌾 Crop Yield Predictor - Agricultural Intelligence
 
 
-## Overview
 
-Crop Yield Predictor is a machine learning project that predicts agricultural crop yield using historical weather, rainfall, pesticide usage, and temperature data. The project follows a complete end-to-end machine learning workflow, including data preprocessing, exploratory data analysis, feature engineering, model development, model evaluation, and dashboard deployment.
+An end-to-end Machine Learning project that predicts agricultural crop yield using historical weather, rainfall, pesticide usage, and temperature data. The project follows a complete Data Science workflow from data preprocessing and exploratory data analysis to model deployment through an interactive Streamlit dashboard.
 
 ---
 
-## Project Objectives
+## Live Demo
 
-- Analyze agricultural production data.
-- Perform data cleaning and validation.
-- Conduct exploratory data analysis (EDA).
-- Engineer meaningful domain-specific features.
-- Build reproducible machine learning pipelines.
-- Compare multiple regression models.
-- Optimize model performance using hyperparameter tuning.
-- Deploy an interactive prediction dashboard using Streamlit.
+**Streamlit App**
+
+https://cropyield-predictor-agricultural-intelligence.streamlit.app/
+
+## Dashboard Preview
+
+![Dashboard](images/dashboard_preview.png)
+
+**GitHub Repository**
+
+https://github.com/nidhi-yadav20799/CropYield-Predictor-Agricultural-Intelligence
+
+---
+
+## Project Overview
+
+Crop Yield Predictor estimates agricultural crop yield using historical agricultural and climatic data. The project demonstrates an industry-style Machine Learning workflow including:
+
+- Data Validation
+- Data Cleaning
+- Exploratory Data Analysis
+- Feature Engineering
+- Machine Learning Pipeline
+- Model Comparison
+- Hyperparameter Tuning
+- Model Deployment
+- Interactive Streamlit Dashboard
+
+---
+
+## Objectives
+
+- Predict agricultural crop yield accurately
+- Perform comprehensive Exploratory Data Analysis (EDA)
+- Engineer meaningful agricultural features
+- Compare multiple regression algorithms
+- Build a reproducible Scikit-Learn Pipeline
+- Deploy an interactive Streamlit application
 
 ---
 
@@ -26,23 +55,23 @@ Crop Yield Predictor is a machine learning project that predicts agricultural cr
 |----------|------------|
 | Programming Language | Python |
 | Data Analysis | Pandas, NumPy |
-| Data Visualization | Matplotlib, Seaborn, Plotly |
+| Visualization | Matplotlib, Seaborn, Plotly |
 | Machine Learning | Scikit-Learn, XGBoost |
-| Dashboard | Streamlit |
-| Experiment Tracking | MLflow |
+| Model Tuning | RandomizedSearchCV |
 | Model Serialization | Joblib |
+| Dashboard | Streamlit |
 
 ---
 
 ## Dataset
 
-**Source:** Kaggle – Crop Yield Prediction Dataset
+**Source:** Kaggle Crop Yield Prediction Dataset
 
 ### Target Variable
 
 - hg/ha_yield
 
-### Features
+### Input Features
 
 - Area
 - Item (Crop)
@@ -58,21 +87,21 @@ Crop Yield Predictor is a machine learning project that predicts agricultural cr
 ```text
 CropYield-Predictor/
 │
+├── dashboard/
+│   └── app.py
+│
 ├── data/
 │   ├── raw/
 │   └── processed/
 │
 ├── images/
-│
 ├── models/
-│
 ├── notebooks/
-│   └── 01_Data_Preprocessing_EDA.ipynb
-│
 ├── reports/
-│
 ├── src/
 │
+├── requirements.txt
+├── runtime.txt
 ├── README.md
 └── .gitignore
 ```
@@ -83,102 +112,165 @@ CropYield-Predictor/
 
 ### Data Preparation
 
-- Dataset acquisition
-- Data loading
+- Dataset loading
 - Data validation
-- Data dictionary generation
 - Missing value analysis
+- Data dictionary generation
 
 ### Data Cleaning
 
 - Duplicate removal
 - Data type validation
-- Outlier analysis using the IQR method
+- Outlier detection using IQR
 - Clean dataset generation
 
 ### Exploratory Data Analysis
 
-The project includes comprehensive exploratory data analysis with statistical interpretation.
-
-Visualizations include:
+The project includes professional visualizations including:
 
 - Histograms
 - KDE Plots
 - Boxplots
 - Correlation Heatmap
 - Feature Correlation Analysis
-- Crop Yield by Region
-- Rainfall vs Crop Yield
-- Temperature vs Crop Yield
 - Pair Plot
+- Crop Yield by Region
+- Rainfall vs Yield
+- Temperature vs Yield
+- Feature Importance
+- Residual Distribution
+- Model Comparison
 
-### Feature Engineering
+---
 
-Engineered features include:
+## Feature Engineering
+
+Custom engineered agricultural features include:
 
 - Rainfall Category
-- Growing Degree Days (GDD)
 - Temperature Category
 - Pesticide Category
+- Growing Degree Days (GDD)
 - Rainfall–Temperature Ratio
 - Yield per Unit of Pesticide
 
-### Machine Learning Pipeline
+---
+
+## Machine Learning Models
 
 Implemented using Scikit-Learn Pipeline and ColumnTransformer.
 
-Current baseline models:
+Models evaluated:
 
 - Linear Regression
 - Ridge Regression
 - Random Forest Regressor
+- Gradient Boosting Regressor
+- XGBoost Regressor
+
+The deployed application uses the tuned **Random Forest Pipeline** for prediction.
 
 ---
 
-## Progress
+## Model Performance
 
-### Completed
+| Model | MAE | RMSE | R² Score |
+|------|------:|------:|------:|
+| XGBoost | 4222.77 | 8054.37 | 0.9910 |
+| Random Forest | 3179.96 | 8075.55 | 0.9910 |
+| Gradient Boosting | 15668.08 | 25789.02 | 0.9082 |
+| Linear Regression | 29923.86 | 42703.46 | 0.7484 |
+| Ridge Regression | 29885.65 | 42717.57 | 0.7482 |
 
-- Data acquisition and validation
-- Data cleaning and preprocessing
-- Exploratory Data Analysis (Part 1)
-- Exploratory Data Analysis (Part 2)
-- Feature engineering
-- Scikit-Learn preprocessing pipeline
-- Train-test split
-- Baseline regression models
-  - Linear Regression
-  - Ridge Regression
-  - Random Forest
-- Advanced regression models
-  - Gradient Boosting
-  - XGBoost
-- 5-fold cross-validation
-- Hyperparameter tuning using RandomizedSearchCV
+---
 
-### Upcoming
+## Streamlit Dashboard
 
-- Model evaluation
-- Feature importance analysis
+The deployed dashboard includes:
+
+### Dashboard
+
+- Project overview
+- Dataset summary
+- Key insights
+
+### Exploratory Data Analysis
+
+- Interactive visualizations
+- Correlation analysis
+- Distribution analysis
+
+### Crop Yield Prediction
+
+- Region selection
+- Crop selection
+- Climate input controls
+- Live crop yield prediction
+- Prediction summary
+
+### Model Performance
+
+- Model comparison
 - Residual analysis
-- Streamlit dashboard
-- Final report
+- Feature importance
+- Evaluation metrics
+
+### About Project
+
+- Workflow
+- Technologies
+- Project summary
+
 ---
 
-## Results
+## Key Features
 
-The project currently includes:
+- End-to-End Machine Learning Workflow
+- Professional Data Cleaning Pipeline
+- Feature Engineering
+- Multiple Model Comparison
+- Hyperparameter Optimization
+- Reproducible ML Pipeline
+- Interactive Streamlit Dashboard
+- Live Crop Yield Prediction
+- Production-Ready Deployment
 
-- Cleaned dataset
-- Feature-engineered dataset
-- Reproducible preprocessing pipeline
-- Baseline machine learning models
+---
 
-Model evaluation, optimization, and deployment will be completed in the remaining development stages.
+## Installation
+
+```bash
+git clone https://github.com/nidhi-yadav20799/CropYield-Predictor-Agricultural-Intelligence.git
+
+cd CropYield-Predictor-Agricultural-Intelligence
+
+pip install -r requirements.txt
+
+streamlit run dashboard/app.py
+```
+
+---
+
+## Future Improvements
+
+- Weather API Integration
+- Satellite Data Integration
+- Deep Learning Models
+- Crop Recommendation System
+- Farmer Decision Support System
 
 ---
 
 ## Author
 
-Nidhi Yadav
+**Nidhi Yadav**
 
+B.Sc. Data Science Graduate
+
+GitHub:
+https://github.com/nidhi-yadav20799
+
+
+---
+
+If you found this project useful, consider giving it a ⭐ on GitHub.
